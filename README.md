@@ -2,6 +2,7 @@
 
 ### DOCS 
 [Config](docs/config.md)
+[Order](docs/order.md)
 
 
 🏗️ 핵심 기능
