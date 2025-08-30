@@ -11,8 +11,8 @@ group = "com.commercium"
 version = "0.1.0"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 repositories {
@@ -137,7 +137,7 @@ tasks.withType<JavaCompile> {
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions {
         freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "21"
+        jvmTarget = "17"
     }
 }
 
@@ -167,6 +167,12 @@ tasks.register<org.springframework.boot.gradle.tasks.run.BootRun>("bootRunDev") 
     description = "Run the application with dev profile"
     args = listOf("--spring.profiles.active=dev")
 }
+
+// build.gradle.kts
+springBoot {
+    mainClass.set("com.commercium.Application")
+}
+
 
 // 테스트 커버리지 (선택사항)
 // apply(plugin = "jacoco")

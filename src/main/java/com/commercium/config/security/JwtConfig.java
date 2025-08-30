@@ -20,23 +20,16 @@ public class JwtConfig {
 
     private final JwtProperties jwtProperties;
 
-    public String generateAccessToken(String userId, String role, Map<String, Object> claims) {
-        Instant now = Instant.now();
-        Instant expiry = now.plus(jwtProperties.getAccessTokenExpiry(), ChronoUnit.SECONDS);
+    private String generateAccessToken(String userId, String secret, long seconds) {
+        var key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
+        var now = new Date();
+        var exp = new Date(now.getTime() + seconds * 1000);
 
-        JwtBuilder builder = Jwts.builder()
-                .setSubject(userId)
-                .setIssuedAt(Date.from(now))
-                .setExpiration(Date.from(expiry))
-                .claim("role", role)
-                .claim("type", "ACCESS");
-
-        if (claims != null) {
-            claims.forEach(builder::claim);
-        }
-
-        return builder
-                .signWith(SignatureAlgorithm.HS256, jwtProperties.getSecret())
+        return Jwts.builder()
+                .subject(userId)
+                .issuedAt(now)
+                .expiration(exp)
+                .signWith(key, Jwts.SIG.HS256)
                 .compact();
     }
 
