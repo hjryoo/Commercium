@@ -3,6 +3,7 @@
 ### DOCS 
 [Config](docs/config.md)
 [Order](docs/order.md)
+[Inventory](docs/Inventory.md)
 
 
 🏗️ 핵심 기능
