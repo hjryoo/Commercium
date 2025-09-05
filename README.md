@@ -4,7 +4,7 @@
 [Config](docs/config.md)
 [Order](docs/order.md)
 [Inventory](docs/Inventory.md)
-
+[Payment](docs/payment.md)
 
 🏗️ 핵심 기능
 주문 (Order)
