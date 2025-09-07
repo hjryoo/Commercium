@@ -1,3 +1,4 @@
+```
 com.commercium.settlement/
 ├── controller/
 │   └── SettlementController.java          // 정산 조회/관리 API
@@ -37,3 +38,4 @@ com.commercium.settlement/
 ├── SettlementEventPublisher.java      // 이벤트 발행
 ├── SettlementKafkaConsumer.java       // Kafka 메시지 처리
 └── ExcelReportGenerator.java          // 엑셀 리포트 생성
+```
