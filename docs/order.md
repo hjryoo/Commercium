@@ -1,3 +1,4 @@
+```
 com.commercium.order/
 ├── controller/
 │   └── OrderController.java
@@ -25,3 +26,4 @@ com.commercium.order/
 └── infrastructure/
 ├── JpaOrderRepositoryImpl.java
 └── OrderEventPublisher.java
+```
