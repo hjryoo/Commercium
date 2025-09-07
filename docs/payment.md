@@ -1,3 +1,4 @@
+```
 com.commercium.payment/
 ├── controller/
 │   └── PaymentController.java             // 결제 요청/조회 API
@@ -35,3 +36,4 @@ com.commercium.payment/
 └── infrastructure/
 ├── PaymentEventPublisher.java         // 이벤트 발행
 └── PaymentKafkaConsumer.java          // Kafka 메시지 처리
+```
