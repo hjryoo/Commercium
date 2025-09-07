@@ -1,3 +1,4 @@
+```markdown
 com.commercium.config/
 ├── database/
 │   ├── DatabaseConfig.java        // DB 연결 설정 (Write/Read 분리)
@@ -17,6 +18,7 @@ com.commercium.config/
 │   ├── AsyncConfig.java         // 비동기 처리 설정
 │   └── SchedulerConfig.java     // 배치/스케줄러 설정
 └── properties/
-├── DatabaseProperties.java  // DB 프로퍼티
-├── RedisProperties.java     // Redis 프로퍼티
-└── JwtProperties.java       // JWT 프로퍼티
+    ├── DatabaseProperties.java  // DB 프로퍼티
+    ├── RedisProperties.java     // Redis 프로퍼티
+    └── JwtProperties.java       // JWT 프로퍼티
+```
