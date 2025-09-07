@@ -1,3 +1,4 @@
+```
 com.commercium.inventory/
 ├── controller/
 │   └── InventoryController.java           // 재고 조회/관리 API
@@ -14,7 +15,7 @@ com.commercium.inventory/
 │   └── JpaInventoryRepository.java        // JPA 구현체
 ├── service/
 │   ├── InventoryService.java              // Application Service
-│   ├── StockReservationService.java      // 재고 예약 서비스 (Redis Lock)
+│   ├── StockReservationService.java       // 재고 예약 서비스 (Redis Lock)
 │   └── dto/
 │       ├── StockReservationRequest.java
 │       ├── InventoryResponse.java
@@ -26,6 +27,7 @@ com.commercium.inventory/
 │   ├── InventoryEventListener.java        // 주문 이벤트 수신
 │   └── OrderEventConsumer.java            // Kafka 컨슈머
 └── infrastructure/
-├── RedisStockLockManager.java         // Redis 분산락 관리
-├── InventoryKafkaConsumer.java        // Kafka 메시지 처리
-└── InventoryEventPublisher.java       // 이벤트 발행
+    ├── RedisStockLockManager.java         // Redis 분산락 관리
+    ├── InventoryKafkaConsumer.java        // Kafka 메시지 처리
+    └── InventoryEventPublisher.java       // 이벤트 발행
+```
