@@ -5,6 +5,7 @@
 [Order](docs/order.md)
 [Inventory](docs/Inventory.md)
 [Payment](docs/payment.md)
+[Settlement](docs/settlement.md)
 
 🏗️ 핵심 기능
 주문 (Order)
